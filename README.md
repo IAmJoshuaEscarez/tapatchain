@@ -9,7 +9,7 @@
 
 ## Overview
 
-TapatChain is a decentralized accountability platform designed to monitor public infrastructure projects in the Philippines. By leveraging distributed ledger technology, the platform creates immutable audit trails, enables real-time milestone tracking, and ensures transparent fund flows to strengthen public trust and accountability in government infrastructure initiatives.
+TapatChain is a decentralized accountability platform designed to monitor public infrastructure projects in the Philippines. Powered by the **Ethereum** blockchain and smart contracts written in **Solidity**, the platform creates immutable audit trails, enables real-time milestone tracking, and ensures transparent fund flows to strengthen public trust and accountability in government infrastructure initiatives.
 
 ---
 
@@ -19,30 +19,31 @@ TapatChain is a decentralized accountability platform designed to monitor public
 * **Progress Tracking:** Real-time monitoring of financial and physical project progress with automated discrepancy flagging.
 * **Public Explorer:** An open ledger interface for viewing project timelines, funding allocations, and milestone completions.
 * **Feedback:** A reporting mechanism for citizens to submit updates and photo evidence.
-* **Web3 Authentication:** Cryptographic user login via MetaMask paired with reCAPTCHA bot protection.
+* **Web3 Authentication:** Cryptographic user login and transaction signing via MetaMask integration with Ethereum, paired with reCAPTCHA bot protection.
 
 ---
 
 ## Use Cases
 
 * **Project Monitoring:** Fund disbursement and milestone tracking for implementing agencies (e.g., DPWH).
-* **Compliance Auditing:** Streamlined verification and data extraction for oversight  (e.g., COA).
+* **Compliance Auditing:** Streamlined verification and data extraction for oversight (e.g., COA).
 * **Public Monitoring:** Active civic participation through transparent and open-source verification of public construction projects.
 
 ---
 
 ## Architecture
 
-TapatChain operates through two core synchronized environments:
+TapatChain operates through two core synchronized environments interacting with the blockchain network:
 
 1. **Frontend:** A responsive React web application built with Vite and TypeScript where users interact with localized dashboards and public ledgers.
-2. **Backend:** A dedicated service (`tapatchain-backend`) that handles business logic, database management, and dispatches transactions to the blockchain network.
+2. **Backend:** A dedicated service (`tapatchain.api`) that handles business logic, database management, and dispatches transactions to the smart contracts.
+3. **Blockchain:** Decentralized ledger state managed by **Solidity** smart contracts deployed on the **Ethereum** testnet network.
 
 ### Data Flow
 1. **Auth:** User logs in via MetaMask and passes reCAPTCHA validation.
 2. **Roles:** Backend verifies credentials and grants role-based dashboard permissions.
-3. **Ledger:** Validated actions are processed by the backend and recorded permanently on the blockchain network.
-4. **Sync:** Core metrics synchronize dynamically across public and internal dashboards.
+3. **Ledger:** Validated actions are processed by the backend and recorded permanently on the Ethereum network via smart contract calls.
+4. **Sync:** Core metrics synchronize dynamically across public and internal dashboards based on blockchain event logs.
 
 ---
 
