@@ -26,7 +26,7 @@ TapatChain is a decentralized accountability platform designed to monitor public
 ## Use Cases
 
 * **Project Monitoring:** Fund disbursement and milestone tracking for implementing agencies (e.g., DPWH).
-* **Compliance Auditing:** Streamlined verification and data extraction for oversight bodies (e.g., COA).
+* **Compliance Auditing:** Streamlined verification and data extraction for oversight  (e.g., COA).
 * **Public Monitoring:** Active civic participation through transparent and open-source verification of public construction projects.
 
 ---
