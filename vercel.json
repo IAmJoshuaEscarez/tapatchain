@@ -1,0 +1,44 @@
+{
+  "rewrites": [
+    {
+      "source": "/about",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/developers",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/public-ledger",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/community",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/community/feedback-form",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/community/report-form",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/monitor/:slug",
+      "destination": "/index.html"
+    }
+  ]
+}
